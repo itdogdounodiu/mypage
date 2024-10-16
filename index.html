@@ -1,0 +1,348 @@
+<!-- I declare that the lab work here submitted is original
+except for source material explicitly acknowledged,
+and that the same or closely related material has not been
+previously submitted for another course.
+I also acknowledge that I am aware of University policy and
+regulations on honesty in academic work, and of the disciplinary
+guidelines and procedures applicable to breaches of such
+policy and regulations, as contained in the website.
+University Guideline on Academic Honesty:
+https://www.cuhk.edu.hk/policy/academichonesty/
+Student Name : Fong Ka Wai
+Student ID : 1155177052
+Class/Section : CSCI2720
+Date : 18/10/2023 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Max Verstappen</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<main>
+
+  <div class="box_area">
+    <header>
+      <section id="bar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <a class="navbar-brand text-white" href="#">Max</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a_about"><i class="bi bi-file-person"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a_achievement"><i class="bi bi-trophy"></i> Achievement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a_spotlight"><i class="bi bi-stars"></i> Spotlight</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a_social"><i class="bi bi-share"></i> Social</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a_comment"><i class="bi bi-chat-left-dots"></i> Comment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" id="togglebutton" role="button" href="javascript:showhide()">Show</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="collapse" id="button-container">
+          <a class="btn btn-primary" href="#a_biography" onclick="changealign()">task1</a>
+          <a class="btn btn-secondary" href="#a_spotlight" onclick="spotlight()">task2</a>
+          <a class="btn btn-success" href="#progressbar" onclick="progresshidshow()">task3</a>
+        </div>
+
+        <div class="progress" id="progressbar" style="display:none;">
+          <div id="pgsbar" class="progress-bar"></div>
+        </div>
+      </section>
+      <div class="banner_area">
+        <div class="gradient_area"></div>
+        <div class="banner_text">
+          <h1>Max<br />Verstappen</h1>
+          <p>Formula 1 driver</p>
+        </div>
+      </div>
+    </header>
+    <!----------------------------------------------------------------------------------------------------------->
+    <div class="content_area">
+      <section id="about">
+        <a name="a_about" style="position: relative; top: -56px;"></a>
+        <div class="container">
+          <div class="subtitle">
+            <h2 class="text-center text-uppercase">about</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4 left-container">
+              <img
+                src="https://www.verstappen.com/img/thumb/thumb.php?src=/img/banner/5_50f6ec5_max_verstappen_racegear_2023_footer.png"
+                id="abtpic">
+            </div>
+            <div class="col-md-8 right-container">
+              <table>
+                <caption>
+                  Max Verstappen profile
+                </caption>
+                <tr>
+                  <th scope="row">Team</th>
+                  <td>Red Bull Racing</td>
+                </tr>
+                <tr>
+                  <th scope="row">Country</th>
+                  <td>Netherlands</td>
+                </tr>
+                <tr>
+                  <th scope="row">Podiums</th>
+                  <td>93</td>
+                </tr>
+                <tr>
+                  <th scope="row">Points</th>
+                  <td>2444.5</td>
+                </tr>
+                <tr>
+                  <th scope="row">Grands Prix entered</th>
+                  <td>180</td>
+                </tr>
+                <tr>
+                  <th scope="row">World Championships</th>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <th scope="row">Highest race finish</th>
+                  <td>49</td>
+                </tr>
+                <tr>
+                  <th scope="row">Highest grid position</th>
+                  <td>1</td>
+                </tr>
+                <tr>
+                <tr>
+                  <th scope="row">Age</th>
+                  <td>26</td>
+                </tr>
+                <th scope="row">Date of birth</th>
+                <td>30/09/1997</td>
+                </tr>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="biography">
+        <a name="a_biography" style="position: relative; top: -56px;"></a>
+        <div class="container">
+          <div class="subtitle">
+            <p class="text-center text-uppercase">Biography</p>
+          </div>
+          <div id="task1" align="left">
+            <p>Arriving as Formula 1’s youngest ever competitor at just 17 years old, Verstappen pushed his car, his
+              rivals and the sport’s record books to the limit. The baby-faced Dutchman with the heart of a lion took
+              the Toro Rosso – and then the Red Bull – by the horns with his instinctive racing style.</p>
+            <p>F1’s youngest points scorer soon became its youngest race winner – at the age of 18 years and 228 days –
+              with an opportunistic but controlled drive on debut for Red Bull in Barcelona 2016. A true wheel-to-wheel
+              racer, another stunning drive in Brazil from the back of the pack to the podium on a treacherous wet track
+              kept the plaudits coming.</p>
+            <p>Verstappen’s no-holds-barred attitude and hard defending have sometimes landed him in hot water with his
+              peers and paymasters. But the mistakes that initially marred his potential have given way to maturity,
+              while the bravado and energy that make him a blockbuster talent have remained – and the victories have
+              kept on coming.</p><aside>
+            <img src="https://d3dup97zc5osq9.cloudfront.net/production/23708/conversions/GP2122_155550_D1A9637-wp_large.webp" class="img-thumbnail">   
+            <p class="text-secondary" style="font-size: 80%;">Max Verstappen won his first Formula One World Championship in 2021.</p>
+          </aside>
+            <p>They culminated in his first F1 drivers’ crown after that already legendary, final-round showdown with
+              Lewis Hamilton in 2021. And he followed that up with a powerhouse title defence in 2022, winning a record
+              15 races across the season.</p>
+            
+            
+            <p>The son of former F1 driver Jos Verstappen and super-quick karting Mum Sophie Kumpen, racing runs through
+              his genes. Despite moving out of Dad’s house to live in Monaco, Verstappen remains close to his family,
+              and though he’s not afraid to speak his mind, he can still be surprisingly shy.</p>
+            <p>Having become the Netherlands' first world champion aged just 24, the expectations for the next
+              generation’s leading light are sky high – but with Verstappen there’s a feeling that the sky’s the limit.
+            </p>
+            
+          </div>
+          
+        </div>
+      </section>
+      <!----------------------------------------------------------------------------------------------------------->
+      <section id="achievement">
+        <a name="a_achievement" style="position: relative; top: -56px;"></a>
+        <div class="subtitle">
+          <h2 class="text-center text-uppercase">latest achievement</h2>
+        </div>
+
+        <div class="achi_box mx-auto " style="width:80%;">
+          <div class="row justify-content-md-center">
+            
+            <div class="col-md-3">
+              <div class="text-center">
+                <div class="track text-white" id="qa">
+                <p>Qatar<br/>FORMULA 1 QATAR GRAND PRIX 2023</p>
+              </div>
+                <img id="achipic" class="img-thumbnail" src="https://media.formula1.com/image/upload/f_auto/q_auto/v1696849144/fom-website/2023/Qatar/verstappen-champion-qatar-2023-2.png.transform/9col/image.png">
+                <p class="font-weight-bold">Champion</p></div>
+            </div>
+
+            
+            <div class="col-md-3">
+              <div class="text-center">
+                <div class="track text-white" id="ja">
+                <p>Japan<br/>FORMULA 1 JAPANESE GRAND PRIX 2023</p>
+              </div>
+                <img id="achipic" class="img-thumbnail" src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1695539488/trackside-images/2023/F1_Grand_Prix_of_Japan/1698257038.jpg.transform/9col/image.jpg">
+                <p class="font-weight-bold">Champion</p></div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="text-center">
+                <div class="track text-white" id="it">
+                <p>Italy<br/> 
+                FORMULA 1 GRAN PREMIO D’ITALIA 2023</p>
+              </div>
+                <img id="achipic" class="img-thumbnail" src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1693754489/trackside-images/2023/F1_Grand_Prix_of_Italy/1657146027.jpg.transform/9col/image.jpg">
+                <p class="font-weight-bold">Champion</p></div>
+            </div>
+            
+            <div class="col-md-3">
+              <div class="text-center">
+                <div class="track text-white" id="ne">
+                <p>Netherlands<br/> 
+                 
+                FORMULA 1 DUTCH GRAND PRIX 2023</p>
+              </div>
+                <img id="achipic" class="img-thumbnail" src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1693151828/trackside-images/2023/F1_Grand_Prix_of_The_Netherlands/1642498185.jpg.transform/9col/image.jpg">
+                <p class="font-weight-bold">Champion</p></div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <section id="SpotLight">
+        <a name="a_spotlight" style="position: relative; top: -56px;"></a>
+        <div class="subtitle">
+          <h2 class="text-center text-uppercase">spotlight</h2>
+        </div>
+        <div class="container">
+          <div class="row row-cols-3" id="spotlight">
+
+            <div class="card" id="Card">
+              <p>Max Verstappen sealed Third Consecutive Formula 1 Championship last weekend !</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="blank"></div>
+
+      <section id="social">
+        <a name="a_social" style="position: relative; top: -56px;"></a>
+        <div class="subtitle">
+          <h2 class="text-center text-uppercase">social</h2>
+        </div>
+        <div class="container">
+          <div class="row justify-content-md-center" id="row-socialbtn">
+            <div class="socialbtn col-md-2 text-center" id="instagram">
+              <a class="text-white btn" href="https://www.instagram.com/maxverstappen1/"><i class="bi bi-instagram"></i>
+                Instagram</a>
+            </div>
+            <div class="socialbtn col-md-2 text-center" id="facebook">
+              <a class="text-white btn" href="https://www.facebook.com/MaxVerstappen/"><i class="bi bi-facebook"></i>
+                Facebook</a>
+            </div>
+            <div class="socialbtn col-md-2 text-center" id="twitterX">
+              <a class="text-white btn" href="https://twitter.com/Max33Verstappen"><i class="bi bi-twitter-x"></i>
+                Twitter X</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="comment">
+        <a name="a_comment" style="position: relative; top: -85px;"></a>
+        <h4 style="margin-bottom:20px;">Leave a comment</h4>
+        <div class="row">
+          <form class="col-md-4 left-container" id="form1">
+            <p>Email Address</p>
+            <input class="form-control" type="email" placeholder="Enter Email" id="new-email">
+            <div class="invalid-feedback">
+              Please enter a vaild email.
+            </div>
+            <p>Comment</p>
+            <textarea class="form-control" id="new-comment" rows="4" placeholder="Enter Comment"></textarea>
+            <div class="invalid-feedback">
+              Please enter a comment.
+            </div>
+            <div>
+              <input type="radio" value="red" name="color" id="red" checked="checked"/>
+              <label for="red">Red</label>
+            </div>
+            <div><input type="radio" value="green" name="color" id="green"/>
+              <label for="green">Green</label>
+            </div>
+            <div><input type="radio" value="yellow" name="color" id="yellow"/>
+              <label for="yellow">Yellow</label>
+            </div>
+            <div><input type="radio" value="blue" name="color" id="blue"/>
+              <label for="blue">Blue</label>
+            </div>
+
+            <a class="text-white text-center" role="button" onclick="submitcomment()" id="submitbtn">Add comment</a>
+          </form>
+
+          <div class="col-md-7" id="right-container2">
+            <h4 class="text-white">Comments</h4>
+            <div class="scrollbox" id="comment-outer">
+              <div class="scrollbox-inner" id="comment-inner">
+                <div class="comment_area d-flex bg-light" id="c1">
+                  <div class="flex-shrink-0">
+                    <svg height="80" width="80">
+                      <circle cx="30" cy="30" r="23" fill="green">
+                    </svg>
+                  </div>
+                  <div class="flex-grow-1">
+                    <p id="email">lewishamilton@gmail.com</p>
+                    <p id="cmt">Bro run too fast!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</main>
+
+
+</html>
